@@ -1,4 +1,4 @@
-import { myMusic } from "../Fetches.jsx"
+import { myIcons, myMusic } from "../Fetches.jsx"
 import { useState, useRef } from "react"
 
 export const MusicPlayer = () => {
@@ -37,14 +37,23 @@ export const MusicPlayer = () => {
       }
 
       return (
-        <div className="music-player">
-          <h2>{myMusic[currentSongIndex].Name}</h2>
-          <div className="controls">
-            <button onClick={() => prevSong()}>Back</button>
-            {isPlaying ? <button onClick={() => playPauseHandler()}>Pause</button>: <button onClick={() => playPauseHandler()}>Play</button>}
+        <div className="flex flex-row gap-x-10 text-2xl">
 
-            <button onClick={() => nextSong()}>Next</button>
+          <div>
+              <img src={myMusic[currentSongIndex].cover} alt="song-cover" className="h-[100px] w-[100px]" />
           </div>
+
+          <div className="flex flex-col gap-y-10 ">
+
+            <h2 className="w-full space-x-5">Song Name: {myMusic[currentSongIndex].Name}</h2>
+            <div className="flex flex-row w-full justify-between">
+            <button onClick={() => prevSong()}>{<img src={myIcons.back} alt="backIcon" className="h-[16px] w-[16px]"/>}</button>
+              {isPlaying ? <button onClick={() => playPauseHandler()}>{<img src={myIcons.pause} alt="pauseIcon" className="h-[16px] w-[16px]"/>}</button>: <button onClick={() => playPauseHandler()}>{<img src={myIcons.play} alt="playIcon" className="h-[16px] w-[16px]"/>}</button>}
+
+              <button onClick={() => nextSong()}>{<img src={myIcons.next} alt="nextIcon" className="h-[16px] w-[16px]"/>}</button>
+            </div>
+          </div>
+
         </div>
       )
 }

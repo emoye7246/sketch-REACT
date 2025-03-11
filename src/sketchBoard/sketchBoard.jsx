@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useRef, useState } from "react";
 import { Stage, Layer, Line } from "react-konva";
+import { myIcons } from "../Fetches";
 
 
 
@@ -58,7 +59,10 @@ export const SketchCanvas = ({color}) => {
         </Layer>
       </Stage>
 
-        <button onClick={() => eraseCanvas()}>Erase Canvas</button>
+          <div className="flex flex-row w-full gap-x-10 mt-8 cursor-pointer" onClick={() => eraseCanvas()}>
+              <img src={myIcons.eraser} alt="eraser-Icon" className="h-[24px] w-[24px]" />
+              <button className="cursor-pointer" >Erase Canvas</button>
+          </div>
 
     </div>
   );

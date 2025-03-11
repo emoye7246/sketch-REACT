@@ -22,15 +22,15 @@ export const App = () => {
   
 
   return (
-    <div className='flex flex-row max-w-screen min-h-screen justify-between bg-[#E9D1D1]'>
+    <div className='flex flex-row max-w-screen min-h-screen justify-between bg-[#E9D1D1]' id="fade" style={{fontFamily: 'Caveat'}}>
 
       <ArtContext.Provider value={{color, changeColor, pageColor, setPageColor, namePage, setNamePage}} >
         <div>
             <Navbar  />
         </div>
 
-        <div className="flex flex-col w-[70vw] mb-10 justify-center items-center">
-          <h1>{namePage}</h1>
+        <div className="flex flex-col w-[70vw] mb-10 justify-center items-center text-2xl">
+          <h1 className='mb-10'>{namePage}</h1>
 
           <div className='h-[600px] w-[600px] rounded-2xl' style={{background: `${pageColor}`}}>
             <SketchCanvas color={color} />
