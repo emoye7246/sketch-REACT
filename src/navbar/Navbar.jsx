@@ -35,7 +35,7 @@ export const Navbar = () => {
 
                     <div className="flex flex-col gap-y-10 text-2xl">
                         <label htmlFor="color" className="flex flex-row items-center justify-between">
-                            <div>Change Color</div>
+                            <div>Change Brush Color</div>
                             <input type="color" name="color" id="color" className="rounded-[14px] h-10 w-10" onChange={(e) => changeColor(e.target.value)} />
                         </label>
                         <label htmlFor="color" className="flex flex-row items-center justify-between gap-x-10">
