@@ -1,12 +1,49 @@
-# React + Vite
+# Skecth App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview 
 
-Currently, two official plugins are available:
+The Sketch App is a creative and relaxing drawing tool built with React. It allows users to freestyle draw on a canvas with a full spectrum of color choices, making sketching easy and enjoyable. To enhance the creative experience, the app includes a built-in music player with a selection of calming lofi songs, perfect for a focused and soothing drawing session.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features 
 
-## Expanding the ESLint configuration
+Freestyle Drawing – Draw freely on a responsive canvas
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎨 Custom Color Picker – Choose any color to bring your art to life
+
+🎵 Built-in Lofi Music Player – Enjoy a relaxing drawing session with curated lofi tracks
+
+⚡ Smooth & Responsive UI – Built with React for an interactive experience
+
+📱 Mobile-Friendly – Optimized for desktop and touch devices
+
+## Tech Stack 
+
+Frontend: React.js, JavaScript, HTML, CSS
+
+Canvas API: For rendering freestyle drawings
+
+Audio Integration: Built-in music player for lofi tracks
+
+Styling: Tailwind CSS for modern UI/UX
+
+## Usage 
+
+Select a color from the palette.
+
+Start drawing freely on the canvas.
+
+Play lofi music to enhance the experience with one click from the navbar.
+
+Enjoy a calming and creative sketching session!
+
+## Plans for the future 
+
+🖌 Eraser Tool & Brush Sizes – More customization for drawing
+
+🖼 Save & Export Drawings – Download artwork as images
+
+🔊 More Music Options – Expand the lofi playlist with user selection
+
+🎚 Adjustable Brush Opacity – Fine-tune the look of strokes
+
+
